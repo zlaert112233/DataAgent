@@ -25,9 +25,13 @@ target/
 
 ### Mac OS ###
 .DS_Store
+Thumbs.db
+Desktop.ini
 
 ### .env files contain local environment variables ###
 .env
+.env.*
+!.env.example
 
 # Maven ignore
 .flattened-pom.xml
@@ -39,10 +43,14 @@ target/
 # windows os
 /extensions/
 /h2-data/
+**/h2-data/**
+*.mv.db
+*.trace.db
 
 # checkstyle report files
 **/checkstyle-report.xml
 **/logs/*
+*.log
 
 # SpecStory files - ignore entire .specstory directory
 .specstory/
@@ -58,6 +66,8 @@ modified_mcp_config.json
 
 uploads/*
 vectorstore/*
+**/uploads/**
+**/vectorstore/**
 .java-version
 
 # spring-ai-alibaba source
